@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-sevalla",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Sevalla API community node for n8n.",
 	"license": "MIT",
 	"homepage": "https://github.com/hansdoebel/n8n-nodes-sevalla",
