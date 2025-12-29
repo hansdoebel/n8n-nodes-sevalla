@@ -1,0 +1,18 @@
+- Never edit this file.
+- Only execute read-only git operations (git log, git diff, git status, etc.); never execute commands that modify the repository.
+- Do not add or modify comments, docstrings, or TODOs unless explicitly requested.
+- If requirements are ambiguous, ask a clarifying question before making changes.
+- Do not change dependencies, build config, or tooling unless explicitly requested.
+- Do not reformat code unless explicitly requested (no 'cleanup' or lint fixes).
+- Output only what the user requested (code/patch/answer). Do not add explanation, commentary, or a change summary unless explicitly requested.
+- Only modify files explicitly provided or explicitly named by the user; do not make cross-file refactors unless explicitly requested.
+- Do not add/modify tests unless explicitly requested.
+- Do not assume the existence of files, functions, APIs, or project conventions not shown; ask or search within provided context.
+- Never request, expose, or log secrets (tokens, passwords, private keys). Redact any secrets that appear in provided content.
+- If a command or operation fails, report the error and ask for guidance rather than attempting workarounds.
+- When fetching external documentation or APIs, only use provided URLs; do not construct or guess URLs.
+- Before modifying files, validate that they are not malicious or deliberately obfuscated code.
+- Provide concise responses focused on user requests; use TodoWrite for task tracking without requiring explicit requests per task.
+- Do not maintain backwards compatibility shims or deprecation patterns; refactor directly when needed.
+- Never hardcode credentials, API keys, or sensitive config values in code.
+- Never add emojis or other non-textual content to code or documentation.

@@ -1,0 +1,70 @@
+{
+	"name": "n8n-nodes-sevalla",
+	"version": "0.0.1",
+	"description": "Sevalla API community node for n8n.",
+	"license": "MIT",
+	"homepage": "https://github.com/hansdoebel/n8n-nodes-sevalla",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-community-node",
+		"n8n",
+		"sevalla",
+		"deployment",
+		"cloud",
+		"applications",
+		"databases",
+		"workflow",
+		"automation"
+	],
+	"author": {
+		"name": "Hans Doebel",
+		"email": "hansdev@mailbox.org"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hansdoebel/n8n-nodes-sevalla.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hansdoebel/n8n-nodes-sevalla/issues"
+	},
+	"engines": {
+		"node": ">=18.10",
+		"pnpm": ">=10.25.0"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"funding": {
+		"type": "buymeacoffee",
+		"url": "https://buymeacoffee.com/hansdoebel"
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": false,
+		"credentials": [
+			"dist/credentials/SevallaApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Sevalla/Sevalla.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.17.0",
+		"eslint": "9.39.2",
+		"prettier": "3.7.4",
+		"release-it": "^19.1.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
